@@ -51,7 +51,7 @@ function App() {
         <div className="timer">
             <button onClick={pause}>Finalizar</button>
             {result > 0 ? <button onClick={stop}>Refazer Teste</button> : ''}
-            {result > 0 ? <h1>Seu PPM é {ppm}</h1> : ''}
+            {result > 0 ? <h1>Seu PPM é {ppm.toFixed(0)}</h1> : ''}
         </div>
       </div>
     </div>
