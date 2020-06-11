@@ -1,43 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
-.main {
-width: 100%;
-margin: 0 auto;
-max-width: 800px;
+header {
+  display: flex;
+  height: 100vh;
+  background: #F2ECE9;
+  padding: 100px 0 20px 100px;
 }
 
-.banner {
+header h1 {
+  font-size: 70px;
+  line-height: 1.1;
+  width: 40vw;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.header-image{
+  width: 600px;
+  height: 100%;
+}
+
+.menu {
   width: 100%;
-  max-height: 1200px
+  height: 60px;
+  background: #F2B6B6;
+  color: #fff;
+  font-weight: bold;
+  padding: 18px;
 }
 
-section h1 {
-text-transform: uppercase;
-margin: 20px 0;
+section {
+  display: flex;
+  height: 500px;
+  padding: 70px 30px 30px 30px;
+  justify-content: center;
+  background: #fff;
 }
 
-h3 {
-  font-size: 16px;
-  line-height: 26px;
+section:last-of-type{
+  background: #F2ECE9;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  width: 50%;
+  margin-top: 70px
+}
+.section-image{
+  width: 500px;
+  height: 300px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .timer {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 40px 0 20px 0;
 }
 
 button {
-  padding: 3px 10px;
-  height: auto;
+  padding: 3px 25px;
+  height: 50px;
   text-align: center;
   font-weight: bold;
-  border-radius: 3px;
-  border: 2px solid #000;
-  background: #94ffe2;
+  border-radius: 8px;
+  border: none;
+  background: #7092C0;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 14px;
   margin: 15px 10px 15px 0;
+  color: #fff;
+}
+
+button:hover {
+  background: #1E3859;
 }
 
 .text {
@@ -45,8 +88,75 @@ button {
   font-size: 24px;
   text-align: justify;
   background: #fff;
-  border: 3px solid #94dbff;
+  border: 3px solid #F2B6B6;
   padding: 15px;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
+footer {
+  width: 100%;
+  height: 100px;
+  background: #1E3859;
+  padding: 40px;
+}
+
+footer h4 {
+  text-align: right;
+  color: #fff;
+}
+
+footer a {
+  color: #F2B6B6;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 20px 90px 20px;
+  }
+
+  header h1 {
+    font-size: 45px;
+    width: 100%;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .header-image{
+    width: 100vw;
+    height: auto;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+  }
+
+  .description {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .timer {
+    margin: 40px 10px 20px 10px;
+  }
+
+  .text {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  footer {
+    padding: 35px;
+  }
+
+  footer h4 {
+    text-align: center;
+  }
+}
 
